@@ -1,8 +1,7 @@
 fn main(){
-    let x="123";
-    let y=x;
-    println!("x={}",x);
-    println!("y={}",y);
+    let x=123;
+    pt(&x);
 }
-//x=123
-//y=123
+fn pt(x:&i32){
+    println!("{}",*x);
+}
